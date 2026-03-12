@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرض أعمال Rapid Wash | صور من خدمات الغسيل والكوي</title>
+    <meta name="description" content="استعرض نماذج من أعمال Rapid Wash في الغسيل والكوي وخدمة الاستلام والتوصيل في عجمان من خلال معرض صور منسق وسهل التصفح.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#4a90e2">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="معرض أعمال Rapid Wash | صور من خدمات الغسيل والكوي">
+    <meta property="og:description" content="معرض صور وفيديو سريع يوضح جودة العناية والتنظيم داخل رابيد واش في عجمان.">
+    <meta property="og:image" content="img/pic1.jpg">
+    <meta property="og:image:alt" content="صورة من معرض Rapid Wash">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="معرض أعمال Rapid Wash | صور من خدمات الغسيل والكوي">
+    <meta name="twitter:description" content="معرض صور وفيديو سريع يوضح جودة العناية والتنظيم داخل رابيد واش في عجمان.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "معرض أعمال Rapid Wash",
+            "description": "معرض صور وفيديو سريع يوضح جودة العمل داخل رابيد واش في عجمان.",
+            "about": {
+                "@type": "LaundryService",
+                "name": "Rapid Wash",
+                "telephone": "+971524412009",
+                "areaServed": "Ajman, UAE"
+            }
+        }
+    </script>
+    <style>
+        :root {
+            --primary-color: #4a90e2;
+            --accent-color: #8852dd;
+            --text-dark: #2c3e50;
+            --text-gray: #7f8c8d;
+            --bg-light: #ffffff;
+            --bg-gray: #f7f9fc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { width: 100%; overflow-x: hidden; scroll-behavior: smooth; }
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: var(--bg-gray);
+            color: var(--text-dark);
+            overflow-x: hidden;
+            line-height: 1.6;
+            width: 100%;
+            max-width: 100vw;
+        }
+        main { display: block; }
+        a:focus-visible,
+        button:focus-visible {
+            outline: 3px solid rgba(74, 144, 226, 0.35);
+            outline-offset: 4px;
+        }
+        .skip-link {
+            position: absolute;
+            top: -52px;
+            right: 16px;
+            z-index: 3000;
+            background: var(--text-dark);
+            color: #fff;
+            padding: 12px 18px;
+            border-radius: 14px;
+            font-weight: 700;
+            transition: top 0.2s ease;
+        }
+        .skip-link:focus { top: 16px; }
+        a { text-decoration: none; }
+        ul { list-style: none; }
+
+        /* الهيدر */
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background: rgba(255, 255, 255, 0.97);
+            backdrop-filter: blur(12px);
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 5%;
+            max-width: 1300px;
+            margin: auto;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .logo span { color: var(--accent-color); }
+        .logo img { height: 56px; width: auto; object-fit: contain; }
+        .nav-links { display: flex; gap: 28px; }
+        .nav-links a {
+            color: var(--text-gray);
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: 0.3s;
+        }
+        .nav-links a:hover, .nav-links a.active { color: var(--primary-color); }
+        .nav-links li.mobile-menu-close { display: none; }
+        .nav-toggle {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border: none;
+            background: rgba(74, 144, 226, 0.15);
+            border-radius: 10px;
+            color: var(--primary-color);
+            font-size: 1.35rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .nav-toggle:hover { background: rgba(74, 144, 226, 0.25); }
+        .nav-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.4);
+            z-index: 998;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition: opacity 0.3s, visibility 0.3s;
+        }
+        body.menu-open .nav-overlay { display: block; opacity: 1; visibility: visible; pointer-events: auto; }
+        .btn-header {
+            background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+            color: #fff;
+            padding: 10px 22px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+        .btn-header:hover { transform: translateY(-2px); }
+
+        /* هيرو المعرض */
+        .gallery-hero {
+            margin-top: 0;
+            min-height: 55vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 35%, #0f3460 70%, #1a1a2e 100%);
+        }
+        .gallery-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: 
+                radial-gradient(ellipse 80% 50% at 50% 0%, rgba(74, 144, 226, 0.25) 0%, transparent 50%),
+                radial-gradient(ellipse 60% 40% at 80% 80%, rgba(136, 82, 221, 0.2) 0%, transparent 45%);
+            pointer-events: none;
+        }
+        .gallery-hero-content {
+            position: relative;
+            z-index: 2;
+            padding: 140px 5% 80px;
+        }
+        .gallery-hero .badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.12);
+            color: rgba(255,255,255,0.95);
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255,255,255,0.15);
+        }
+        .gallery-hero h1 {
+            font-size: 3.2rem;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+        .gallery-hero h1 span {
+            background: linear-gradient(90deg, #6dd5ed, #8852dd);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .gallery-hero p {
+            color: rgba(255,255,255,0.8);
+            font-size: 1.1rem;
+            max-width: 480px;
+            margin: 0 auto;
+        }
+
+        /* فلتر التبويبات */
+        .gallery-filter {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            padding: 32px 5% 24px;
+            background: var(--bg-light);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+        }
+        .gallery-filter button {
+            font-family: 'Cairo', sans-serif;
+            padding: 12px 28px;
+            border-radius: 30px;
+            border: 2px solid rgba(74, 144, 226, 0.2);
+            background: #fff;
+            color: var(--text-gray);
+            font-weight: 700;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .gallery-filter button:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+        .gallery-filter button.active,
+        .gallery-filter button[aria-pressed="true"] {
+            background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+            border-color: transparent;
+            color: #fff;
+        }
+        .gallery-toolbar {
+            max-width: 1400px;
+            margin: 0 auto 28px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .gallery-toolbar-copy {
+            max-width: 720px;
+            color: var(--text-gray);
+            font-size: 1rem;
+        }
+        .gallery-count {
+            background: rgba(74, 144, 226, 0.08);
+            color: var(--text-dark);
+            padding: 12px 18px;
+            border-radius: 18px;
+            font-weight: 700;
+        }
+        .gallery-count strong { color: var(--primary-color); }
+
+        /* شبكة المعرض */
+        .gallery-section {
+            padding: 40px 5% 100px;
+        }
+        .gallery-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 24px;
+            grid-auto-flow: dense;
+        }
+        .gallery-item {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            aspect-ratio: 3/4;
+            cursor: pointer;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            border: none;
+            background: transparent;
+            padding: 0;
+            text-align: inherit;
+            font: inherit;
+            width: 100%;
+        }
+        .gallery-item:hover,
+        .gallery-item:focus-visible {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 24px 48px rgba(74, 144, 226, 0.2);
+        }
+        .gallery-item.tall { grid-row: span 2; aspect-ratio: auto; }
+        .gallery-item.wide { grid-column: span 2; aspect-ratio: 2/1; }
+        .gallery-item img,
+        .gallery-item .video-thumb {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+        .gallery-item:hover img,
+        .gallery-item:hover .video-thumb,
+        .gallery-item:focus-visible img,
+        .gallery-item:focus-visible .video-thumb { transform: scale(1.08); }
+        .gallery-item .video-thumb {
+            background-size: cover;
+            background-position: center;
+        }
+        .gallery-item-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, transparent 50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 24px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .gallery-item:hover .gallery-item-overlay,
+        .gallery-item:focus-visible .gallery-item-overlay { opacity: 1; }
+        .gallery-item[data-type="video"] .gallery-item-overlay {
+            opacity: 1;
+            background: linear-gradient(to top, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.28) 55%, transparent 100%);
+        }
+        .gallery-item-overlay .icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.95);
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+        }
+        .gallery-item[data-type="video"] .gallery-item-overlay .icon {
+            background: rgba(255,255,255,0.98);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.16);
+        }
+        .gallery-item-overlay .title {
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+        .gallery-item-overlay .sub {
+            color: rgba(255,255,255,0.85);
+            font-size: 0.9rem;
+        }
+
+        /* لايت بوكس الصور */
+        .lightbox {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.92);
+            backdrop-filter: blur(12px);
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        .lightbox.active { opacity: 1; visibility: visible; }
+        .lightbox img {
+            max-width: 95%;
+            max-height: 90vh;
+            object-fit: contain;
+            border-radius: 12px;
+            box-shadow: 0 25px 80px rgba(0,0,0,0.5);
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+        }
+        .lightbox.active img { transform: scale(1); }
+        .lightbox-close {
+            position: absolute;
+            top: 24px;
+            left: 24px;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.15);
+            color: #fff;
+            border: none;
+            font-size: 1.4rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .lightbox-close:hover { background: rgba(255,255,255,0.25); }
+
+        /* مودال الفيديو */
+        .video-modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.95);
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        .video-modal.active { opacity: 1; visibility: visible; }
+        .video-modal-inner {
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 25px 80px rgba(0,0,0,0.6);
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+        }
+        .video-modal.active .video-modal-inner { transform: scale(1); }
+        .video-modal-inner iframe,
+        .video-modal-inner video.video-modal-native {
+            width: 100%;
+            aspect-ratio: 16/9;
+            display: block;
+            background: #000;
+        }
+        .video-modal-close {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: rgba(0,0,0,0.6);
+            color: #fff;
+            border: none;
+            font-size: 1.3rem;
+            cursor: pointer;
+            transition: 0.3s;
+            z-index: 10;
+        }
+        .video-modal-close:hover { background: rgba(0,0,0,0.85); }
+        .gallery-cta {
+            max-width: 900px;
+            margin: 52px auto 0;
+            background: linear-gradient(135deg, rgba(74, 144, 226, 0.08), rgba(136, 82, 221, 0.1));
+            border: 1px solid rgba(74, 144, 226, 0.14);
+            border-radius: 28px;
+            padding: 32px;
+            text-align: center;
+            box-shadow: 0 18px 48px rgba(18, 33, 58, 0.08);
+        }
+        .gallery-cta h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        .gallery-cta p {
+            color: var(--text-gray);
+            margin-bottom: 18px;
+        }
+
+        /* وسائل التواصل العائمة */
+        .social-float {
+            position: fixed;
+            left: 30px;
+            bottom: 100px;
+            z-index: 99;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .social-float a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            color: #fff;
+            background: rgba(44, 62, 80, 0.85);
+            box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+        .social-float a:hover { transform: translateY(-3px); color: #fff; }
+        .social-float a.social-fb:hover { background: #1877f2; }
+        .social-float a.social-google:hover { background: #4285f4; }
+        .social-float a i { font-size: 1.2rem; }
+        @media (max-width: 768px) {
+            .social-float {
+                left: max(20px, env(safe-area-inset-left, 20px));
+                bottom: calc(95px + env(safe-area-inset-bottom, 0px));
+            }
+            .social-float a { width: 44px; height: 44px; }
+        }
+
+        /* زر واتساب عائم */
+        .wa-float {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            background-color: #25d366;
+            color: #fff;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            font-size: 28px;
+            box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+        }
+        .wa-float:hover { transform: scale(1.05); color: #fff; }
+        @media (max-width: 768px) {
+            .wa-float {
+                left: max(20px, env(safe-area-inset-left, 20px));
+                bottom: max(20px, env(safe-area-inset-bottom, 20px));
+                width: 50px;
+                height: 50px;
+                font-size: 26px;
+            }
+        }
+
+        /* الفوتر */
+        footer {
+            background: var(--text-dark);
+            color: #fff;
+            padding: 50px 5% 24px;
+        }
+        .footer-content {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 32px;
+        }
+        .footer-col h3 { font-size: 1.2rem; margin-bottom: 14px; }
+        .footer-col p, .footer-col a { color: #aaa; font-size: 0.9rem; }
+        .footer-col a:hover { color: var(--primary-color); }
+        .copyright {
+            text-align: center;
+            margin-top: 36px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        @media (max-width: 900px) {
+            .gallery-item.wide { grid-column: span 1; }
+        }
+        @media (max-width: 768px) {
+            .gallery-toolbar { flex-direction: column; align-items: stretch; }
+            .gallery-count { text-align: center; }
+            .gallery-cta { padding: 24px 18px; }
+            .nav-toggle { display: flex; }
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: 0;
+                width: 280px;
+                max-width: 85vw;
+                height: 100vh;
+                background: #fff;
+                flex-direction: column;
+                padding: 24px 20px 24px;
+                padding-top: 80px;
+                box-shadow: -4px 0 24px rgba(0,0,0,0.12);
+                z-index: 999;
+                display: none;
+                gap: 0;
+                margin: 0;
+            }
+            .nav-links li { border-bottom: 1px solid rgba(0,0,0,0.06); list-style: none; }
+            .nav-links li.mobile-menu-close { display: block; border-bottom: none; padding: 0 0 16px; margin-bottom: 8px; border-bottom: 1px solid rgba(0,0,0,0.08); }
+            .nav-links .btn-close-menu {
+                display: flex; align-items: center; justify-content: center; gap: 8px;
+                width: 100%; padding: 14px 20px; background: rgba(74, 144, 226, 0.1);
+                color: var(--primary-color); border: none; border-radius: 12px;
+                font-family: 'Cairo', sans-serif; font-weight: 700; font-size: 1rem; cursor: pointer;
+            }
+            .nav-links .btn-close-menu i { font-size: 1.2rem; }
+            .nav-links a { padding: 16px 0; display: block; font-size: 1.05rem; }
+            body.menu-open .nav-links { display: flex; }
+            .nav-overlay { display: block; }
+            .gallery-hero h1 { font-size: 2.2rem; }
+            .gallery-item.tall { grid-row: span 1; }
+        }
+        @media (max-width: 480px) {
+            .gallery-grid { grid-template-columns: 1fr; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a class="skip-link" href="#mainContent">تخطي إلى المحتوى</a>
+
+    <div class="social-float">
+        <a href="https://www.facebook.com/people/Rapid-Wash/61552654572607/" target="_blank" rel="noopener noreferrer" class="social-fb" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.google.com/maps/place/14+%D8%B4%D8%A7%D8%B1%D8%B9+%D8%A7%D9%84%D8%A3%D9%82%D8%B5%D9%8A+-+Al+Rashidiya+3+-+Ajman%E2%80%AD/@25.3953186,55.435389,17z/data=!3m1!4b1!4m6!3m5!1s0x3e5f59dab01d4887:0xf356e7e96817700c!8m2!3d25.3953186!4d55.435389!16s%2Fg%2F11pqs3h8qr?entry=ttu" target="_blank" rel="noopener noreferrer" class="social-google" aria-label="جوجل"><i class="fab fa-google"></i></a>
+    </div>
+    <a href="https://wa.me/971524412009" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="واتساب"><i class="fab fa-whatsapp"></i></a>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html#home" class="logo"><img src="img/logo.png" alt="Rapid Wash" width="996" height="996" decoding="async">Rapid<span>Wash</span></a>
+            <div class="nav-overlay" id="navOverlay" onclick="closeMenu()" aria-hidden="true"></div>
+            <ul class="nav-links" id="siteMenu">
+                <li class="mobile-menu-close">
+                    <button type="button" class="btn-close-menu" onclick="closeMenu()" aria-label="إغلاق القائمة"><i class="fas fa-times"></i> إغلاق</button>
+                </li>
+                <li><a href="index.html#home" onclick="closeMenu()">الرئيسية</a></li>
+                <li><a href="index.html#services" onclick="closeMenu()">خدماتنا</a></li>
+                <li><a href="index.html#about" onclick="closeMenu()">من نحن</a></li>
+                <li><a href="gallery.html" class="active" aria-current="page" onclick="closeMenu()">المعرض</a></li>
+                <li><a href="index.html#blog" onclick="closeMenu()">المدونة</a></li>
+                <li><a href="index.html#pricing" onclick="closeMenu()">الأسعار</a></li>
+            </ul>
+            <button type="button" class="nav-toggle" id="navToggle" aria-label="فتح القائمة" aria-expanded="false" aria-controls="siteMenu" onclick="toggleMenu()">
+                <i class="fas fa-bars" id="navToggleIcon"></i>
+            </button>
+            <a href="https://wa.me/971524412009" target="_blank" rel="noopener noreferrer" class="btn-header"><i class="fab fa-whatsapp"></i> واتساب</a>
+        </nav>
+    </header>
+
+    <main id="mainContent">
+    <section class="gallery-hero">
+        <div class="gallery-hero-content">
+            <span class="badge"><i class="fas fa-images"></i> معرض رابيد واش</span>
+            <h1>صور <span>وفيديو</span> من عالمنا</h1>
+            <p>تعرف على خدماتنا وجودة عملنا من خلال معرض الصور والفيديو داخل Rapid Wash</p>
+        </div>
+    </section>
+
+    <div class="gallery-filter" role="tablist" aria-label="تصفية المعرض">
+        <button type="button" class="active" data-filter="all" aria-pressed="true">الكل</button>
+        <button type="button" data-filter="image" aria-pressed="false">صور</button>
+        <button type="button" data-filter="video" aria-pressed="false">فيديوهات</button>
+    </div>
+
+    <section class="gallery-section">
+        <div class="gallery-toolbar">
+            <p class="gallery-toolbar-copy">نماذج مختارة من أعمالنا وخدماتنا داخل رابيد واش. اضغط على أي صورة لعرضها بالحجم الكامل أو شغل الفيديو مباشرة من المعرض.</p>
+            <p class="gallery-count">العناصر المعروضة: <strong id="galleryCount">0</strong></p>
+        </div>
+        <div class="gallery-grid" id="galleryGrid"></div>
+        <div class="gallery-cta">
+            <h2>جاهز ترسل طلبك؟</h2>
+            <p>تواصل معنا على واتساب وسننسق الاستلام والتوصيل في أسرع وقت.</p>
+            <a href="https://wa.me/971524412009" target="_blank" rel="noopener noreferrer" class="btn-header">اطلب عبر واتساب</a>
+        </div>
+    </section>
+    </main>
+    <!-- لايت بوكس -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="عرض الصورة" onclick="closeLightbox(event)">
+        <button type="button" class="lightbox-close" aria-label="إغلاق" onclick="closeLightbox(event)"><i class="fas fa-times"></i></button>
+        <img src="" alt="" id="lightbox-img">
+    </div>
+
+    <!-- مودال الفيديو (يدعم YouTube و MP4) -->
+    <div class="video-modal" id="videoModal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="عرض الفيديو" onclick="closeVideoModal(event)">
+        <div class="video-modal-inner" onclick="event.stopPropagation()">
+            <button type="button" class="video-modal-close" aria-label="إغلاق" onclick="closeVideoModal()"><i class="fas fa-times"></i></button>
+            <iframe id="videoFrame" src="" title="فيديو" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display:none;"></iframe>
+            <video id="videoPlayer" controls playsinline style="display:none;" class="video-modal-native"></video>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>Rapid<span style="color:var(--primary-color)">Wash</span></h3>
+                <p>معرض الصور والفيديو من داخل رابيد واش - نظافة تدوم وأناقة تليق بكم.</p>
+            </div>
+            <div class="footer-col">
+                <h3>روابط</h3>
+                <a href="index.html#home">الرئيسية</a><br>
+                <a href="index.html#services">خدماتنا</a><br>
+                <a href="gallery.html" aria-current="page">المعرض</a><br>
+                <a href="index.html#pricing">الأسعار</a>
+            </div>
+            <div class="footer-col">
+                <a href="https://wa.me/971524412009" target="_blank" rel="noopener noreferrer" class="btn-header">واتساب</a>
+            </div>
+        </div>
+        <div class="copyright">&copy; 2026 Rapid Wash. All Rights Reserved.</div>
+    </footer>
+
+        <script>
+        const galleryImageFiles = [
+            'IMG_0307.jpg',
+            'IMG_0307.jpg1.jpg',
+            'IMG_0307.jpg2.jpg',
+            'IMG_0307.jpg3.jpg',
+            'IMG_0307.jpg4.jpg',
+            'IMG_0307.jpg5.jpg',
+            'IMG_0307.jpg6.jpg',
+            'IMG_0307.jpg7.jpg',
+            'IMG_0307.jpg8.jpg',
+            'IMG_0307.jpg10.jpg',
+            'IMG_0307.jpg11.jpg',
+            'IMG_0307.jpg12.jpg',
+            'IMG_0307.jpg13.jpg',
+            'IMG_0307.jpg14.jpg',
+            'IMG_0307.jpg15.jpg',
+            'IMG_0307.jpg16.jpg',
+            'IMG_0307.jpg17.jpg',
+            'IMG_0307.jpg18.jpg',
+            'IMG_0307.jpg19.jpg',
+            'IMG_0307.jpg20.jpg',
+            'IMG_0307.jpg21.jpg',
+            'IMG_0307.jpg22.jpg',
+            'IMG_0307.jpg23.jpg',
+            'IMG_0307.jpg24.jpg',
+            'IMG_0307.jpg25.jpg'
+        ];
+
+        const videoItems = [
+            {
+                type: 'video',
+                src: 'https://bytegaps.com/RapidWash/video/video1.mp4',
+                thumb: 'images/gallery/IMG_0307.jpg',
+                title: 'فيديو من داخل الخدمة',
+                sub: 'شغل الفيديو مباشرة من المعرض'
+            }
+        ];
+
+        const galleryItems = videoItems.concat(galleryImageFiles.map(function(fileName, index) {
+            return {
+                type: 'image',
+                src: 'images/gallery/' + fileName,
+                thumb: 'images/gallery/' + fileName,
+                alt: 'صورة من معرض Rapid Wash رقم ' + (index + 1),
+                title: 'لقطة من أعمال رابيد واش',
+                sub: 'صورة رقم ' + (index + 1) + ' من داخل المعرض',
+                width: 1200,
+                height: 1600
+            };
+        }));
+
+        const galleryGrid = document.getElementById('galleryGrid');
+        const galleryCount = document.getElementById('galleryCount');
+        const filterButtons = document.querySelectorAll('.gallery-filter button');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxCloseButton = document.querySelector('.lightbox-close');
+        const videoModal = document.getElementById('videoModal');
+        const videoFrame = document.getElementById('videoFrame');
+        const videoPlayer = document.getElementById('videoPlayer');
+        const videoCloseButton = document.querySelector('.video-modal-close');
+        let lastFocusedElement = null;
+        const hasVideoItems = galleryItems.some(function(item) {
+            return item.type === 'video';
+        });
+
+        if (!hasVideoItems) {
+            filterButtons.forEach(function(button) {
+                if (button.getAttribute('data-filter') === 'video') {
+                    button.hidden = true;
+                    button.setAttribute('aria-hidden', 'true');
+                }
+            });
+        }
+
+        function escapeHtml(value) {
+            return String(value || '').replace(/[&<>"']/g, function(character) {
+                const map = {
+                    '&': '&amp;',
+                    '<': '&lt;',
+                    '>': '&gt;',
+                    '"': '&quot;',
+                    "'": '&#39;'
+                };
+                return map[character];
+            });
+        }
+
+        function renderGallery(filter) {
+            const activeFilter = filter || 'all';
+            const visibleItems = galleryItems.filter(function(item) {
+                return activeFilter === 'all' || item.type === activeFilter;
+            });
+
+            galleryGrid.innerHTML = visibleItems.map(function(item) {
+                const sizeClass = item.size ? ' ' + item.size : '';
+                const labelPrefix = item.type === 'video' ? 'تشغيل' : 'فتح';
+                const overlayIcon = item.type === 'video' ? 'fa-play' : 'fa-expand-alt';
+                if (item.type === 'video') {
+                    return `
+                        <button type="button" class="gallery-item${sizeClass}" data-type="video" data-src="${escapeHtml(item.src)}" aria-label="${labelPrefix} ${escapeHtml(item.title)}">
+                            <div class="video-thumb" style="background-image: url('${escapeHtml(item.thumb)}');"></div>
+                            <div class="gallery-item-overlay">
+                                <span class="icon"><i class="fas ${overlayIcon}"></i></span>
+                                <span class="title">${escapeHtml(item.title)}</span>
+                                <span class="sub">${escapeHtml(item.sub)}</span>
+                            </div>
+                        </button>
+                    `;
+                }
+
+                const dimensionAttrs = item.width && item.height ? ` width="${item.width}" height="${item.height}"` : '';
+                return `
+                    <button type="button" class="gallery-item${sizeClass}" data-type="image" data-src="${escapeHtml(item.src)}" data-alt="${escapeHtml(item.alt)}" aria-label="${labelPrefix} ${escapeHtml(item.title)}">
+                        <img src="${escapeHtml(item.thumb)}" alt="${escapeHtml(item.alt)}" loading="lazy" decoding="async"${dimensionAttrs}>
+                        <div class="gallery-item-overlay">
+                            <span class="icon"><i class="fas ${overlayIcon}"></i></span>
+                            <span class="title">${escapeHtml(item.title)}</span>
+                            <span class="sub">${escapeHtml(item.sub)}</span>
+                        </div>
+                    </button>
+                `;
+            }).join('');
+
+            galleryCount.textContent = visibleItems.length;
+        }
+
+        function restoreFocus() {
+            if (lastFocusedElement && typeof lastFocusedElement.focus === 'function') {
+                lastFocusedElement.focus();
+            }
+            lastFocusedElement = null;
+        }
+
+        function openLightbox(src, alt) {
+            lightboxImg.src = src;
+            lightboxImg.alt = alt || '';
+            lightbox.classList.add('active');
+            lightbox.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+            if (lightboxCloseButton) {
+                lightboxCloseButton.focus();
+            }
+        }
+
+        function closeLightbox(event) {
+            if (!event || event.target.id === 'lightbox' || event.target.closest('.lightbox-close')) {
+                lightbox.classList.remove('active');
+                lightbox.setAttribute('aria-hidden', 'true');
+                lightboxImg.src = '';
+                lightboxImg.alt = '';
+                document.body.style.overflow = '';
+                restoreFocus();
+            }
+        }
+
+        function openVideoModal(url) {
+            const isYoutube = url.indexOf('youtube.com') !== -1 || url.indexOf('youtu.be') !== -1;
+            if (isYoutube) {
+                videoFrame.src = url;
+                videoFrame.style.display = 'block';
+                videoPlayer.style.display = 'none';
+                videoPlayer.pause();
+                videoPlayer.src = '';
+            } else {
+                videoPlayer.src = url;
+                videoPlayer.style.display = 'block';
+                videoFrame.style.display = 'none';
+                videoFrame.src = '';
+                videoPlayer.play().catch(function() {
+                    return null;
+                });
+            }
+            videoModal.classList.add('active');
+            videoModal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+            if (videoCloseButton) {
+                videoCloseButton.focus();
+            }
+        }
+
+        function closeVideoModal(event) {
+            if (!event || event.target.id === 'videoModal' || event.target.closest('.video-modal-close')) {
+                videoFrame.src = '';
+                videoFrame.style.display = 'none';
+                videoPlayer.pause();
+                videoPlayer.src = '';
+                videoPlayer.style.display = 'none';
+                videoModal.classList.remove('active');
+                videoModal.setAttribute('aria-hidden', 'true');
+                document.body.style.overflow = '';
+                restoreFocus();
+            }
+        }
+
+        filterButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                filterButtons.forEach(function(item) {
+                    item.classList.remove('active');
+                    item.setAttribute('aria-pressed', 'false');
+                });
+                this.classList.add('active');
+                this.setAttribute('aria-pressed', 'true');
+                renderGallery(this.getAttribute('data-filter'));
+            });
+        });
+
+        galleryGrid.addEventListener('click', function(event) {
+            const trigger = event.target.closest('.gallery-item');
+            if (!trigger) {
+                return;
+            }
+
+            lastFocusedElement = trigger;
+            if (trigger.getAttribute('data-type') === 'video') {
+                openVideoModal(trigger.getAttribute('data-src'));
+                return;
+            }
+
+            openLightbox(trigger.getAttribute('data-src'), trigger.getAttribute('data-alt'));
+        });
+
+        var navToggle = document.getElementById('navToggle');
+        var navToggleIcon = document.getElementById('navToggleIcon');
+        var navOverlay = document.getElementById('navOverlay');
+
+        function syncMenuState() {
+            var isOpen = document.body.classList.contains('menu-open');
+            if (navToggleIcon) {
+                navToggleIcon.className = isOpen ? 'fas fa-times' : 'fas fa-bars';
+            }
+            if (navToggle) {
+                navToggle.setAttribute('aria-label', isOpen ? 'إغلاق القائمة' : 'فتح القائمة');
+                navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            }
+            if (navOverlay) {
+                navOverlay.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+            }
+        }
+
+        function closeMenu() {
+            document.body.classList.remove('menu-open');
+            syncMenuState();
+        }
+
+        function toggleMenu() {
+            document.body.classList.toggle('menu-open');
+            syncMenuState();
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                if (lightbox.classList.contains('active')) {
+                    closeLightbox();
+                }
+                if (videoModal.classList.contains('active')) {
+                    closeVideoModal();
+                }
+                closeMenu();
+            }
+        });
+
+        renderGallery('all');
+        syncMenuState();
+    </script>
+</body>
+</html>

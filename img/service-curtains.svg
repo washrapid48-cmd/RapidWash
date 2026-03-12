@@ -1,0 +1,32 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1200" height="800" rx="36" fill="url(#bg)"/>
+<circle cx="198" cy="142" r="92" fill="#FFFFFF" fill-opacity="0.12"/>
+<circle cx="1016" cy="656" r="122" fill="#FFFFFF" fill-opacity="0.08"/>
+<rect x="212" y="132" width="776" height="34" rx="17" fill="#6D7E90"/>
+<rect x="244" y="166" width="62" height="26" rx="13" fill="#DCE5EE"/>
+<rect x="356" y="166" width="62" height="26" rx="13" fill="#DCE5EE"/>
+<rect x="468" y="166" width="62" height="26" rx="13" fill="#DCE5EE"/>
+<rect x="580" y="166" width="62" height="26" rx="13" fill="#DCE5EE"/>
+<rect x="692" y="166" width="62" height="26" rx="13" fill="#DCE5EE"/>
+<rect x="804" y="166" width="62" height="26" rx="13" fill="#DCE5EE"/>
+<rect x="894" y="166" width="62" height="26" rx="13" fill="#DCE5EE"/>
+<rect x="288" y="188" width="240" height="430" rx="42" fill="#F3F8FF"/>
+<rect x="672" y="188" width="240" height="430" rx="42" fill="#F3F8FF"/>
+<path d="M328 188V618" stroke="#D7E1ED" stroke-width="18" stroke-linecap="round" stroke-dasharray="6 18"/>
+<path d="M388 188V618" stroke="#D7E1ED" stroke-width="18" stroke-linecap="round" stroke-dasharray="6 18"/>
+<path d="M448 188V618" stroke="#D7E1ED" stroke-width="18" stroke-linecap="round" stroke-dasharray="6 18"/>
+<path d="M732 188V618" stroke="#D7E1ED" stroke-width="18" stroke-linecap="round" stroke-dasharray="6 18"/>
+<path d="M792 188V618" stroke="#D7E1ED" stroke-width="18" stroke-linecap="round" stroke-dasharray="6 18"/>
+<path d="M852 188V618" stroke="#D7E1ED" stroke-width="18" stroke-linecap="round" stroke-dasharray="6 18"/>
+<rect x="540" y="206" width="120" height="356" rx="24" fill="#FDFEFF"/>
+<rect x="552" y="224" width="96" height="320" rx="18" fill="#D7EEF9"/>
+<path d="M594 244L620 278L662 294L628 320L636 366L594 344L552 366L560 320L526 294L568 278L594 244Z" fill="#8ABBD8"/>
+<path d="M192 650H1008" stroke="#CAD7E2" stroke-width="18" stroke-linecap="round"/>
+<defs>
+<linearGradient id="bg" x1="76" y1="80" x2="1128" y2="736" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F7FBFF"/>
+<stop offset="0.5" stop-color="#E5F0FA"/>
+<stop offset="1" stop-color="#D4E5F2"/>
+</linearGradient>
+</defs>
+</svg>
