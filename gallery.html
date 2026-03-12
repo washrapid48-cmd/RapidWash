@@ -707,6 +707,7 @@
     </footer>
 
         <script>
+        const galleryBaseUrl = 'https://bytegaps.com/RapidWash/images/';
         const galleryImageFiles = [
             'IMG_0307.jpg',
             'IMG_0307.jpg1.jpg',
@@ -717,6 +718,7 @@
             'IMG_0307.jpg6.jpg',
             'IMG_0307.jpg7.jpg',
             'IMG_0307.jpg8.jpg',
+            'IMG_0307.jpg9.jpg',
             'IMG_0307.jpg10.jpg',
             'IMG_0307.jpg11.jpg',
             'IMG_0307.jpg12.jpg',
@@ -739,7 +741,7 @@
             {
                 type: 'video',
                 src: 'https://bytegaps.com/RapidWash/video/video1.mp4',
-                thumb: 'images/gallery/IMG_0307.jpg',
+                thumb: galleryBaseUrl + 'IMG_0307.jpg',
                 title: 'فيديو من داخل الخدمة',
                 sub: 'شغل الفيديو مباشرة من المعرض'
             }
@@ -748,8 +750,8 @@
         const galleryItems = videoItems.concat(galleryImageFiles.map(function(fileName, index) {
             return {
                 type: 'image',
-                src: 'images/gallery/' + fileName,
-                thumb: 'images/gallery/' + fileName,
+                src: galleryBaseUrl + fileName,
+                thumb: galleryBaseUrl + fileName,
                 alt: 'صورة من معرض Rapid Wash رقم ' + (index + 1),
                 title: 'لقطة من أعمال رابيد واش',
                 sub: 'صورة رقم ' + (index + 1) + ' من داخل المعرض',
