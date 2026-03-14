@@ -6,6 +6,19 @@
     <title>متى تحتاج غسيل السجاد الاحترافي؟ | Rapid Wash</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/rapidwash-i18n.css">
+    <script>
+        (function() {
+            try {
+                if (window.localStorage.getItem('rapidwash-language') === 'en') {
+                    document.documentElement.lang = 'en';
+                    document.documentElement.dir = 'ltr';
+                }
+            } catch (error) {
+                return;
+            }
+        })();
+    </script>
     <style>
         :root {
             --primary-color: #4a90e2;
@@ -160,7 +173,7 @@
         }
     </style>
 </head>
-<body>
+<body data-page="blog-carpet-washing">
     <div class="social-float">
         <a href="https://www.facebook.com/people/Rapid-Wash/61552654572607/" target="_blank" rel="noopener noreferrer" class="social-fb" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
         <a href="https://www.google.com/maps/place/14+%D8%B4%D8%A7%D8%B1%D8%B9+%D8%A7%D9%84%D8%A3%D9%82%D8%B5%D9%8A+-+Al+Rashidiya+3+-+Ajman%E2%80%AD/@25.3953186,55.435389,17z/data=!3m1!4b1!4m6!3m5!1s0x3e5f59dab01d4887:0xf356e7e96817700c!8m2!3d25.3953186!4d55.435389!16s%2Fg%2F11pqs3h8qr?entry=ttu" target="_blank" rel="noopener noreferrer" class="social-google" aria-label="جوجل"><i class="fab fa-google"></i></a>
@@ -168,8 +181,11 @@
     <a href="https://wa.me/971524412009" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="واتساب"><i class="fab fa-whatsapp"></i></a>
     <header class="site-header">
         <div class="inner">
-            <a href="index.html" class="logo">Rapid<span>Wash</span></a>
-            <a href="index.html#blog" class="back"><i class="fas fa-arrow-right"></i> العودة للمدونة</a>
+            <a href="index.html" class="logo"><bdi dir="ltr">Rapid <span>Wash</span></bdi></a>
+            <div class="header-tools">
+                <div class="lang-switcher" data-language-switcher></div>
+                <a href="index.html#blog" class="back"><i class="fas fa-arrow-right"></i> العودة للمدونة</a>
+            </div>
         </div>
     </header>
 
@@ -232,5 +248,6 @@
         تم تصميم الموقع بواسطة
         <a href="https://moharamradwan.com/" target="_blank" rel="noopener noreferrer">شركة محرم رضوان للبرمجيات</a>
     </footer>
+    <script src="js/rapidwash-i18n.js"></script>
 </body>
 </html>

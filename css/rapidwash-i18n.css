@@ -1,0 +1,193 @@
+.nav-actions,
+.header-tools {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.site-header .inner {
+    gap: 12px;
+}
+
+.navbar > .logo,
+.site-header .inner > .logo {
+    margin-inline-end: clamp(18px, 2.8vw, 42px);
+}
+
+.nav-actions {
+    margin-inline-start: auto;
+}
+
+.header-tools {
+    flex-wrap: wrap;
+    margin-inline-start: auto;
+}
+
+.lang-switcher {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px;
+    border-radius: 999px;
+    border: 1px solid rgba(74, 144, 226, 0.16);
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 8px 24px rgba(32, 76, 125, 0.08);
+    flex-shrink: 0;
+}
+
+.lang-switcher button {
+    border: none;
+    background: transparent;
+    color: #5e7086;
+    min-width: 46px;
+    height: 36px;
+    border-radius: 999px;
+    font-weight: 800;
+    font-size: 0.84rem;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.lang-switcher button:hover {
+    color: #2c3e50;
+}
+
+.lang-switcher button.is-active {
+    background: linear-gradient(135deg, #4a90e2, #6aa7eb);
+    color: #fff;
+    box-shadow: 0 8px 18px rgba(74, 144, 226, 0.22);
+}
+
+html[dir="ltr"] body {
+    direction: ltr;
+}
+
+html[dir="ltr"] .hero-content,
+html[dir="ltr"] .services-overview,
+html[dir="ltr"] .service-card-body,
+html[dir="ltr"] .pricing-overview,
+html[dir="ltr"] .pricing-catalog,
+html[dir="ltr"] .section-header,
+html[dir="ltr"] .about-intro-text,
+html[dir="ltr"] .feature-item,
+html[dir="ltr"] .blog-card-body,
+html[dir="ltr"] .map-address-card,
+html[dir="ltr"] .footer-col,
+html[dir="ltr"] .gallery-hero-content,
+html[dir="ltr"] .gallery-toolbar,
+html[dir="ltr"] .gallery-cta,
+html[dir="ltr"] .article-wrap,
+html[dir="ltr"] .article-section,
+html[dir="ltr"] .site-footer {
+    text-align: left;
+}
+
+html[dir="ltr"] .hero-info-top {
+    left: 18px;
+    right: auto;
+}
+
+html[dir="ltr"] .hero-info-bottom {
+    right: 18px;
+    left: auto;
+}
+
+html[dir="ltr"] .hero-stage-badge {
+    left: 16px;
+    right: auto;
+}
+
+html[dir="ltr"] .nav-links {
+    direction: ltr;
+}
+
+html[dir="ltr"] .service-points li,
+html[dir="ltr"] .article-section li,
+html[dir="ltr"] .tips-list li {
+    padding-left: 24px;
+    padding-right: 0;
+}
+
+html[dir="ltr"] .service-points li::before,
+html[dir="ltr"] .article-section li::before,
+html[dir="ltr"] .tips-list li::before {
+    left: 0;
+    right: auto;
+}
+
+html[dir="ltr"] .service-link i,
+html[dir="ltr"] .read-more i,
+html[dir="ltr"] .back i {
+    transform: scaleX(-1);
+}
+
+html[dir="ltr"] .nav-links,
+html[dir="ltr"] .pricing-strip,
+html[dir="ltr"] .hero-service-strip,
+html[dir="ltr"] .services-overview-list,
+html[dir="ltr"] .services-stats,
+html[dir="ltr"] .hero-proof,
+html[dir="ltr"] .footer-social {
+    justify-content: flex-start;
+}
+
+html[dir="ltr"] .nav-links li.mobile-menu-close,
+html[dir="ltr"] .contact-box a,
+html[dir="ltr"] .footer-col a,
+html[dir="ltr"] .footer-col p {
+    text-align: left;
+}
+
+@media (max-width: 1024px) {
+    .nav-actions {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-actions,
+    .header-tools {
+        gap: 8px;
+    }
+
+    .site-header .inner {
+        flex-wrap: wrap;
+    }
+
+    .navbar > .logo,
+    .site-header .inner > .logo {
+        margin-inline-end: 12px;
+    }
+
+    .header-tools {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .lang-switcher button {
+        min-width: 42px;
+        height: 34px;
+    }
+
+    html[dir="ltr"] .nav-links {
+        left: 0;
+        right: auto;
+        box-shadow: 4px 0 24px rgba(0, 0, 0, 0.12);
+    }
+
+    html[dir="ltr"] .hero-stage-badge {
+        left: 12px;
+        right: auto;
+    }
+
+    html[dir="ltr"] .hero-info-top {
+        left: 8px;
+        right: 8px;
+    }
+
+    html[dir="ltr"] .hero-info-bottom {
+        right: 8px;
+        left: auto;
+    }
+}

@@ -20,6 +20,19 @@
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/rapidwash-i18n.css">
+    <script>
+        (function() {
+            try {
+                if (window.localStorage.getItem('rapidwash-language') === 'en') {
+                    document.documentElement.lang = 'en';
+                    document.documentElement.dir = 'ltr';
+                }
+            } catch (error) {
+                return;
+            }
+        })();
+    </script>
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -620,7 +633,7 @@
         }
     </style>
 </head>
-<body>
+<body data-page="gallery">
     <a class="skip-link" href="#mainContent">تخطي إلى المحتوى</a>
 
     <div class="social-float">
@@ -631,7 +644,7 @@
 
     <header>
         <nav class="navbar">
-            <a href="index.html#home" class="logo"><img src="img/logo.png" alt="Rapid Wash" width="996" height="996" decoding="async">Rapid<span>Wash</span></a>
+            <a href="index.html#home" class="logo"><img src="img/logo.png" alt="Rapid Wash" width="996" height="996" decoding="async"><bdi dir="ltr">Rapid <span>Wash</span></bdi></a>
             <div class="nav-overlay" id="navOverlay" onclick="closeMenu()" aria-hidden="true"></div>
             <ul class="nav-links" id="siteMenu">
                 <li class="mobile-menu-close">
@@ -644,10 +657,13 @@
                 <li><a href="index.html#blog" onclick="closeMenu()">المدونة</a></li>
                 <li><a href="index.html#pricing" onclick="closeMenu()">الأسعار</a></li>
             </ul>
-            <button type="button" class="nav-toggle" id="navToggle" aria-label="فتح القائمة" aria-expanded="false" aria-controls="siteMenu" onclick="toggleMenu()">
-                <i class="fas fa-bars" id="navToggleIcon"></i>
-            </button>
-            <a href="https://wa.me/971524412009" target="_blank" rel="noopener noreferrer" class="btn-header"><i class="fab fa-whatsapp"></i> واتساب</a>
+            <div class="nav-actions">
+                <button type="button" class="nav-toggle" id="navToggle" aria-label="فتح القائمة" aria-expanded="false" aria-controls="siteMenu" onclick="toggleMenu()">
+                    <i class="fas fa-bars" id="navToggleIcon"></i>
+                </button>
+                <div class="lang-switcher" data-language-switcher></div>
+                <a href="https://wa.me/971524412009" target="_blank" rel="noopener noreferrer" class="btn-header"><i class="fab fa-whatsapp"></i> واتساب</a>
+            </div>
         </nav>
     </header>
 
@@ -669,7 +685,7 @@
     <section class="gallery-section">
         <div class="gallery-toolbar">
             <p class="gallery-toolbar-copy">نماذج مختارة من أعمالنا وخدماتنا داخل رابيد واش. اضغط على أي صورة لعرضها بالحجم الكامل أو شغل الفيديو مباشرة من المعرض.</p>
-            <p class="gallery-count">العناصر المعروضة: <strong id="galleryCount">0</strong></p>
+            <p class="gallery-count"><span class="gallery-count-label">العناصر المعروضة:</span> <strong id="galleryCount">0</strong></p>
         </div>
         <div class="gallery-grid" id="galleryGrid"></div>
         <div class="gallery-cta">
@@ -719,6 +735,7 @@
         </div>
     </footer>
 
+        <script src="js/rapidwash-i18n.js"></script>
         <script>
         const galleryBaseUrl = 'https://bytegaps.com/RapidWash/images/';
         const galleryImageFiles = [
@@ -750,13 +767,34 @@
             'IMG_0307.jpg25.jpg'
         ];
 
+        const currentGalleryLanguage = window.RapidWashI18n && window.RapidWashI18n.getLanguage ? window.RapidWashI18n.getLanguage() : 'ar';
+        const galleryText = currentGalleryLanguage === 'en'
+            ? {
+                videoTitle: 'Service video',
+                videoSub: 'Play the video directly from the gallery',
+                imageAltPrefix: 'Photo from the Rapid Wash gallery #',
+                imageTitle: 'A look at Rapid Wash work',
+                imageSubPrefix: 'Gallery image #',
+                openLabel: 'Open',
+                playLabel: 'Play'
+            }
+            : {
+                videoTitle: 'فيديو من داخل الخدمة',
+                videoSub: 'شغل الفيديو مباشرة من المعرض',
+                imageAltPrefix: 'صورة من معرض Rapid Wash رقم ',
+                imageTitle: 'لقطة من أعمال رابيد واش',
+                imageSubPrefix: 'صورة رقم ',
+                openLabel: 'فتح',
+                playLabel: 'تشغيل'
+            };
+
         const videoItems = [
             {
                 type: 'video',
                 src: 'https://bytegaps.com/RapidWash/video/video1.mp4',
                 thumb: galleryBaseUrl + 'IMG_0307.jpg',
-                title: 'فيديو من داخل الخدمة',
-                sub: 'شغل الفيديو مباشرة من المعرض'
+                title: galleryText.videoTitle,
+                sub: galleryText.videoSub
             }
         ];
 
@@ -765,9 +803,9 @@
                 type: 'image',
                 src: galleryBaseUrl + fileName,
                 thumb: galleryBaseUrl + fileName,
-                alt: 'صورة من معرض Rapid Wash رقم ' + (index + 1),
-                title: 'لقطة من أعمال رابيد واش',
-                sub: 'صورة رقم ' + (index + 1) + ' من داخل المعرض',
+                alt: galleryText.imageAltPrefix + (index + 1),
+                title: galleryText.imageTitle,
+                sub: galleryText.imageSubPrefix + (index + 1),
                 width: 1200,
                 height: 1600
             };
@@ -818,7 +856,7 @@
 
             galleryGrid.innerHTML = visibleItems.map(function(item) {
                 const sizeClass = item.size ? ' ' + item.size : '';
-                const labelPrefix = item.type === 'video' ? 'تشغيل' : 'فتح';
+                const labelPrefix = item.type === 'video' ? galleryText.playLabel : galleryText.openLabel;
                 const overlayIcon = item.type === 'video' ? 'fa-play' : 'fa-expand-alt';
                 if (item.type === 'video') {
                     return `
@@ -954,7 +992,7 @@
                 navToggleIcon.className = isOpen ? 'fas fa-times' : 'fas fa-bars';
             }
             if (navToggle) {
-                navToggle.setAttribute('aria-label', isOpen ? 'إغلاق القائمة' : 'فتح القائمة');
+                navToggle.setAttribute('aria-label', window.RapidWashI18n ? window.RapidWashI18n.getMenuLabel(isOpen) : (isOpen ? 'إغلاق القائمة' : 'فتح القائمة'));
                 navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
             }
             if (navOverlay) {
